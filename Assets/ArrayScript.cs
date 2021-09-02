@@ -13,10 +13,6 @@ public class ArrayScript : MonoBehaviour {
 
 
 
-    // create an array for the points - nem kell???
-    //public GameObject[] myPoints;
-    //public GameObject[] myMids;
-
 
     // 3 diemsional struct, frist for the bodys, second for the points, third for the coords
     public int[,,] points = new int[,,] {
@@ -114,7 +110,6 @@ public class ArrayScript : MonoBehaviour {
         }
 
 
-        //myMids = new GameObject[14]; - nem kell???
 
         for(int i = 0; i < 14; i++) {
 
