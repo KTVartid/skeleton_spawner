@@ -67,19 +67,12 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Bootstrap.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\CollabAnalytics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\CollabHistoryWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\CollabToolbarButton.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\CollabToolbarWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Presenters\CollabHistoryPresenter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\BuildStatusButton.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\CollabHistoryDropDown.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\CollabHistoryDropDownItem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\CollabHistoryItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\CollabHistoryItemFactory.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\CollabHistoryRevisionLine.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\HistoryProgressSpinner.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\ICollabHistoryItemFactory.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\PagedListView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Collab\Views\StatusView.cs" />
     <None Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Resources\Styles\CollabHistoryDark.uss" />
     <None Include="Library\PackageCache\com.unity.collab-proxy@1.2.16\Editor\Unity.CollabProxy.Editor.asmdef" />
@@ -267,9 +260,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.VR">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

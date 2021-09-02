@@ -72,18 +72,12 @@
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\ProjectGeneration\FileIOProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\ProjectGeneration\GUIDProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\ProjectGeneration\ProjectGeneration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\RiderInitializer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\RiderScriptEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\RiderScriptEditorData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\UnitTesting\CallbackData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\UnitTesting\CallbackInitializer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\UnitTesting\RiderTestRunner.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\UnitTesting\TestEvent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\UnitTesting\TestsCallback.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\Util\CommandLineParser.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\Util\FileSystemUtil.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\Util\LibcNativeInterop.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\Util\RiderMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\Util\UnityUtils.cs" />
     <None Include="Library\PackageCache\com.unity.ide.rider@1.1.4\Rider\Editor\com.unity.ide.rider.asmdef" />
     <Reference Include="UnityEngine">
@@ -268,9 +262,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.VR">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

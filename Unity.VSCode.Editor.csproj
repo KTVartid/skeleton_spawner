@@ -64,13 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.3\Editor\ProjectGeneration\AssemblyNameProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.3\Editor\ProjectGeneration\FileIO.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.3\Editor\ProjectGeneration\GUIDGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.3\Editor\ProjectGeneration\ProjectGeneration.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.3\Editor\ProjectGeneration\ProjectGenerationFlag.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.3\Editor\VSCodeDiscovery.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.3\Editor\VSCodeScriptEditor.cs" />
     <None Include="Library\PackageCache\com.unity.ide.vscode@1.2.3\Editor\Unity.com.unity.vscode.Editor.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -254,9 +251,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.VR">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.23f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
