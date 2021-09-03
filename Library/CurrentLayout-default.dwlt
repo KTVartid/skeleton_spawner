@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 3}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 780, y: 342}
-  m_MaxSize: {x: 16005, y: 8042}
+  m_MinSize: {x: 780, y: 492}
+  m_MaxSize: {x: 16005, y: 14042}
   vertical: 0
-  controlID: 145
+  controlID: 138
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     y: 0
     width: 1437
     height: 947
-  m_MinSize: {x: 505, y: 342}
-  m_MaxSize: {x: 12005, y: 8042}
+  m_MinSize: {x: 505, y: 492}
+  m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 78
+  controlID: 75
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_MinSize: {x: 505, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 79
+  controlID: 76
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -264,14 +264,14 @@ MonoBehaviour:
     y: 661
     width: 1437
     height: 286
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,20 +393,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d2c3ffff
-      m_LastClickedID: -15406
-      m_ExpandedIDs: 02c5ffff06c5ffffd6cdffffaad2ffffaed2ffff4ed5ffffd8dbffffd2dfffffd6dfffff1ae2ffff28e6ffff76ebffffd0f3ffffd4f3ffffc6f5ffff22f8ffff68fbffff
+      m_SelectedIDs: 9c330000
+      m_LastClickedID: 13212
+      m_ExpandedIDs: b072ffff7c79ffff8079ffff027fffff067fffffd281ffffd681ffffd484ffffde88ffffe288ffff3a94ffff9296ffff8a9cffff589fffffaea1ffff7ea9ffffe2abffffeeafffff5cb8ffff60b8ffff92baffffaabeffff3cc1ffffb2c3ffff02c6ffff24c9ffffc2cfffff48d2ffff2ed6ffffcad8fffff6daffff28ddffff2edfffff8ae1ffff20e4ffff22eaffff26eaffff82edffff70f6ffff4efaffff68fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: b5
-        m_OriginalName: b5
+        m_Name: s6
+        m_OriginalName: s6
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -13056
+        m_UserData: -27648
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -455,9 +455,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 422.23007, y: 426.58115, z: -66.53839}
+    m_Target: {x: 234.01315, y: 232.89685, z: -5.56839}
     speed: 2
-    m_Value: {x: 422.23007, y: 426.58115, z: -66.53839}
+    m_Value: {x: 234.01315, y: 232.89685, z: -5.56839}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -503,13 +503,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.046175126, y: 0.002095077, z: 0.0001034858, w: -0.9989657}
+    m_Target: {x: 0.05628545, y: -0.11446905, z: -0.006519629, w: -0.99186194}
     speed: 2
-    m_Value: {x: 0.046173535, y: 0.0020950048, z: 0.000103482234, w: -0.9989313}
+    m_Value: {x: 0.05628253, y: -0.11446311, z: -0.006519291, w: -0.9918105}
   m_Size:
-    m_Target: 264.67145
+    m_Target: 230.24489
     speed: 2
-    m_Value: 264.67145
+    m_Value: 230.24489
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -665,19 +665,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Resources
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Resources
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\hololens practice\skeleton_spawner
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e8330000
-    m_LastClickedID: 13288
+    m_SelectedIDs: c4340000
+    m_LastClickedID: 13508
     m_ExpandedIDs: 00000000e2330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -731,8 +731,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: aef3ffff
-    m_LastClickedInstanceID: -3154
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000c2660000545200004c5e00004a5e00003a57000000000000
     m_RenameOverlay:

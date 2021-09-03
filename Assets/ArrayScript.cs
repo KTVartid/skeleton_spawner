@@ -2,20 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArrayScript : MonoBehaviour {
-
+public class ArrayScript : MonoBehaviour
+{
     private int frames = 0;
-
 
     public GameObject skeleton;
     public GameObject bones;
     public GameObject bonePrefab;
 
-
-
-
     // 3 diemsional struct, frist for the bodys, second for the points, third for the coords
-    public int[,,] points = new int[,,] {
+    public float[,,] points = new float[,,] {
         {
         {428, 116, 0 },
         {443, 103, 0 },
@@ -33,7 +29,9 @@ public class ArrayScript : MonoBehaviour {
         {445, 612, 0 },
         {355, 608, 0 },
         {430, 783, 0 },
-        {373, 782, 0 }
+        {373, 782, 0 },
+        {0, 0, 0 },
+        {0, 0, 0 },
         },
 
         {
@@ -53,7 +51,9 @@ public class ArrayScript : MonoBehaviour {
         {460, 956, 0 },
         {307, 942, 0 },
         {439, 1133, 0 },
-        {286, 1146, 0 }
+        {286, 1146, 0 },
+        {0, 0, 0 },
+        {0, 0, 0 },
         },
 
         {
@@ -73,13 +73,15 @@ public class ArrayScript : MonoBehaviour {
         {187, 308, 0 },
         {99, 312, 0 },
         {219, 406, 0 },
-        {92, 405, 0 }
+        {92, 405, 0 },
+        {0, 0, 0 },
+        {0, 0, 0 },
         }
 };
 
 
-
-    void Start() {
+    void Start()
+    {
 
         // first dimension (figures)
         int d1 = points.GetLength(0);
@@ -93,10 +95,9 @@ public class ArrayScript : MonoBehaviour {
         bones = new GameObject("bones");
 
 
-
         // create the points in unity
-        for(int n = 0; n < d2; n++) {
-
+        for (int n = 0; n < d2; n++)
+        {
             GameObject point = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             Material sphereMat = Resources.Load("sphere_mat", typeof(Material)) as Material;
             point.transform.name = "s" + (1 + n);
@@ -104,46 +105,62 @@ public class ArrayScript : MonoBehaviour {
             point.transform.position = new Vector3((points[0, n, 0]), (points[0, n, 1]), (points[0, n, 2]));
             point.transform.localScale = new Vector3(3, 3, 3);
             point.GetComponent<Renderer>().material = sphereMat;
-
         }
 
-
-
-        for(int i = 0; i < 14; i++) {
-
+        for (int i = 0; i < 16; i++)
+        {
             Instantiate(bonePrefab);
             GameObject actualBone = GameObject.Find("bonePrefab(Clone)");
             actualBone.transform.SetParent(bones.transform);
             actualBone.transform.name = "b" + (1 + i);
+            actualBone.AddComponent<LineRenderer>();
         }
 
     }
 
 
-
-    void Update() {
-
+    void Update()
+    {
         // first dimension (figures)
         int d1 = points.GetLength(0);
         // second dimension (points)
         int d2 = points.GetLength(1);
 
 
-
-
-
-        for(int i = 0; i < d1; i++) {
-
+        for (int i = 0; i < d1; i++)
+        {
             frames++;
-            if(frames % 100 == 0) {
+            if (frames % 100 == 0)
+            {
 
 
-                for(int n = 0; n < d2; n++) {
+
+                for (int n = 0; n < d2; n++)
+                {
 
                     GameObject point = GameObject.Find("s" + (1 + n));
                     point.transform.position = new Vector3((points[i, n, 0]), (points[i, n, 1]), (points[i, n, 2]));
 
                 }
+
+
+                Vector3 from = GameObject.Find("s12").transform.position;
+                Vector3 to = GameObject.Find("s13").transform.position;
+                Vector3 fromToMid = (from + to) / 2;
+                GameObject.Find("s18").transform.position = fromToMid;
+                points[i, 17, 0] = fromToMid.x;
+                points[i, 17, 1] = fromToMid.y;
+                points[i, 17, 2] = fromToMid.z;
+
+                from = GameObject.Find("s6").transform.position;
+                to = GameObject.Find("s7").transform.position;
+                fromToMid = (from + to) / 2;
+                GameObject.Find("s19").transform.position = fromToMid;
+                points[i, 18, 0] = fromToMid.x;
+                points[i, 18, 1] = fromToMid.y;
+                points[i, 18, 2] = fromToMid.z;
+
+                // (12. elem + 13. elem) / 2
 
 
                 Vector3[] targets = {
@@ -161,10 +178,13 @@ public class ArrayScript : MonoBehaviour {
                     GameObject.Find("s17").transform.position,
                     GameObject.Find("s13").transform.position,
                     GameObject.Find("s7").transform.position,
+                    GameObject.Find("s19").transform.position,
+                    GameObject.Find("s1").transform.position,
                 };
 
 
-                Vector3[] mids = new Vector3[14];
+                Vector3[] mids = new Vector3[16];
+
 
                 Vector2[] midCoords = {
                     new Vector2(0, 1),
@@ -180,10 +200,14 @@ public class ArrayScript : MonoBehaviour {
                     new Vector2(12, 14),
                     new Vector2(14, 16),
                     new Vector2(11, 12),
-                    new Vector2(5, 6)
+                    new Vector2(5, 6),
+                    new Vector2(17, 18),
+                    new Vector2(18, 0),
                 };
 
-                for(int n = 0; n < midCoords.Length; n++) {
+
+                for (int n = 0; n < midCoords.Length; n++)
+                {
                     float mid_x = (points[i, (int)midCoords[n].x, 0] + points[i, (int)midCoords[n].y, 0]) / 2f;
                     float mid_y = (points[i, (int)midCoords[n].x, 1] + points[i, (int)midCoords[n].y, 1]) / 2f;
                     float mid_z = (points[i, (int)midCoords[n].x, 2] + points[i, (int)midCoords[n].y, 2]) / 2f;
@@ -194,8 +218,8 @@ public class ArrayScript : MonoBehaviour {
                 int m = mids.GetLength(0);
 
 
-
-                for(int n = 0; n < m; n++) {
+                for (int n = 0; n < m; n++)
+                {
 
                     float dist = Vector3.Distance(mids[n], targets[n]);
                     var dir = targets[n] - mids[n];
